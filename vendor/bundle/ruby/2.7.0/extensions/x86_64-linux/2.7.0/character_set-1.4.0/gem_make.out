@@ -1,0 +1,23 @@
+current directory: /home/sanjay/TODO/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.0/ext/character_set
+/home/sanjay/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/sanjay/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20201208-33065-vgrhyf.rb extconf.rb
+creating Makefile
+
+current directory: /home/sanjay/TODO/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.0/ext/character_set
+make "DESTDIR=" clean
+
+current directory: /home/sanjay/TODO/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.0/ext/character_set
+make "DESTDIR="
+compiling character_set.c
+character_set.c: In function ‘cs_method_hash’:
+character_set.c:233:22: warning: ‘four_byte_value’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  233 |       four_byte_value++;
+      |       ~~~~~~~~~~~~~~~^~
+character_set.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+linking shared-object character_set/character_set.so
+
+current directory: /home/sanjay/TODO/vendor/bundle/ruby/2.7.0/gems/character_set-1.4.0/ext/character_set
+make "DESTDIR=" install
+/usr/bin/install -m 0755 character_set.so ./.gem.20201208-33065-1wrrr1b/character_set

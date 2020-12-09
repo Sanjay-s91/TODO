@@ -1,0 +1,95 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap-datepicker
+ */
+
+  .row{
+   width: 100%;
+  }
+  
+  .signup{
+   color:#fd0000;
+   margin-left:177px;
+  }
+ 
+  body{
+   background-color: blue;
+  }
+  
+  .tag-line{
+    color: #f8f9fa;
+  }
+  
+  .inner-wrapper1{
+   min-height: 486px;
+   width: 452px;
+   border:1px solid grey;
+   border-radius: 5px;
+   margin: 60px auto; 
+   padding: 20px;
+   box-sizing: border-box;
+   overflow: hidden;
+   background-color:#023227;
+   margin-left: 70%;
+   margin-top: 8%;
+  }
+ 
+ .inner-wrapper{
+   min-height: 550px;
+   width: 700px;
+   border:1px solid grey;
+   border-radius: 5px;
+   margin: 60px auto; 
+   padding: 20px;
+   background-color: #023227;
+   box-sizing: border-box;
+   max-width: 700px;
+   overflow: hidden;
+  
+  }
+  
+  .header{
+   height: 25%;
+   width: 91%;
+   background-color:  #efebeb;
+   padding: 40px 20px 15px
+   box-sizing: border-box;
+   margin-left: 25px;
+   }
+  
+  .form-box{
+   padding: 40px 20px 15px;
+   box-sizing: border-box;
+   background-color: #efebeb;
+   margin-left: 27px;
+
+  }
+  
+  .background{
+    background-color: blue;
+  }
+  ml-5, .mx-5 {
+   margin-left: 8rem!important;
+  }
+ 
+ .user{
+  margin-left: 400px;
+}
+.action{
+  align-items: center;
+}
+.list{
+  margin-left: 500px;
+}

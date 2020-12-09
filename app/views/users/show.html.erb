@@ -1,0 +1,18 @@
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @user.first_name %>
+    <%= @user.last_name %>
+  </h1>
+
+  <p class="lead">  <%= @user.email %></p>
+  <div style="width:200px;height: auto;margin-left:30%">
+     <%= image_tag(@user.image)%>
+      <%= form_with(model:@user,local:true) do |form|  %>
+          <%=form.file_field :image%>
+       <%= form.submit "change picture", class:"btn btn-info m-1" %>
+     <%end%> 
+  </div> 
+  <%= link_to 'Edit', edit_user_path(@user),class:"btn btn-info float-left"%> 
+  <%= link_to 'Back', users_path,class:"btn btn-info float-right"%>
+</div>

@@ -1,0 +1,8 @@
+
+ 
+$("#edit_<%= @task.id %>").modal('hide');
+$("#edit_<%= @task.id %>").fadeOut(500,function(){
+   $(this).remove();
+});
+$(".data").append(task);
+$('.modal').remove();

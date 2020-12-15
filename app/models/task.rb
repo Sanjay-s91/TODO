@@ -2,7 +2,7 @@ class Task < ApplicationRecord
     belongs_to :user
     
     validates :task_name,  
-    presence: true,:message => 'Please Enter User name'  
+    presence: true 
 
     validates :task_note,
     presence: true

@@ -17,13 +17,12 @@ gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-#gem 'jbuilder', '~> 2.7'
+# gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-gem 'jquery-rails'
-gem 'client_side_validations'
-gem 'pry'
+ gem 'jquery-rails'
+ gem 'pry'
  gem 'bcrypt', '~> 3.1.7'
  gem  'hirb'
 # Use Active Storage variant
@@ -54,10 +53,6 @@ group :test do
   gem 'webdrivers'
 end
 
-group :assets do
- 
-  
-  gem 'jquery-ui-rails'
-end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

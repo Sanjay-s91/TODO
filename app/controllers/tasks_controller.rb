@@ -28,10 +28,13 @@ class TasksController < ApplicationController
   end
   
   def update
-    if @task.update(task_params)
-       redirect_to user_tasks_path(@user),notice:'task was successfully created'
-    else
-       render :new 
+    respond_to do |format|
+     if @task.update(task_params)
+        format.html {redirect_to user_tasks_path(@user), notice: 'User was successfully updated.'}  
+        format.js
+     else
+        render :new 
+     end
     end
   end  
 

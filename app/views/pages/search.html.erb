@@ -4,9 +4,7 @@
     <tbody>
       <% @results.each do |result| %>
          <tr>
-         	<%if result.user_id == session[:user_id]%>
-              <td><%= result.task_note %></td>
-            <%end%>
+            <td><%= result.task_note %></td>
          </tr>
       <% end %>
     </tbody>
